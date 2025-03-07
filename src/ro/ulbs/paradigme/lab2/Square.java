@@ -20,7 +20,7 @@ public class Square extends Form{
     }
 
     public String toString() {
- return "sunt un patrat cu latura: "+side;
+ return "sunt un patrat cu aria: "+getArea();
 
     }
 }

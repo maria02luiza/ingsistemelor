@@ -17,4 +17,9 @@ public class Circle extends Form{
     public float getArea() {
         return (float) (Math.PI*radius*radius);
     }
+
+    @Override
+    public String toString() {
+        return "sunt un triunghi cu aria: "+getArea();
+    }
 }

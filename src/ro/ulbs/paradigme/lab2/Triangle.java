@@ -27,4 +27,9 @@ public class Triangle extends Form{
     public float getArea() {
         return base*hight;
     }
+
+    @Override
+    public String toString() {
+        return "sunt un triunghi cu aria: "+getArea();
+    }
 }
