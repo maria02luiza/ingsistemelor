@@ -1,6 +1,7 @@
-import ro.ulbs.paradigme.lab2.doublechained.DoubleChainedNode;
+package lab3;
+
+import ro.ulbs.paradigme.lab2.Form;
 import ro.ulbs.paradigme.lab2.simplechained.SimpleChainedList;
-import ro.ulbs.paradigme.lab2.simplechained.SimpleChainedNode;
 import ro.ulbs.paradigme.lab2.doublechained.DoubleChainedList;
 
 
@@ -43,7 +44,23 @@ public class Main {
 
 
                 System.out.println("Lista dublu inlantuuita este in ordine crescatoare? " + doubleList.isSorted());
-            }
-        }
+
+                //3.6.1
+            // Creăm câteva instanțe ale clasei Form
+             Form form1 = new Form();
+             Form form2 = new Form();
+             Form form3 = new Form();
+             Form form4 = new Form();
+             System.out.println("Numarul de instante create: " + Form.getCounter() );
+             //3.6.2-calasa passwordmaker
+        PasswordMMaker passwordMaker=new PasswordMMaker("UserNme ");
+        System.out.println("Parola generata: " + passwordMaker.getPassword());
+        PasswordMMaker passwordMaker = new PasswordMMaker("UserName");
+        System.out.println("Parola generata: " + passwordMaker.getPassword("UserName"));
+    }
+
+    }
+
+}
 
 
